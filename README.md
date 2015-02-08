@@ -7,7 +7,13 @@
 ```
 $ git clone https://github.com/kechol/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
+
+# Setup config files
 $ ./bootstrap.sh
+# Install packages and apps
+$ ./brew.sh
+# Override OSX defaults
+$ ./osx.sh
 ```
 
 

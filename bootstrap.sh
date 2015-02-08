@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #update self
 git pull
@@ -7,7 +7,7 @@ git pull
 PWD=`pwd`
 PREFIX='.'
 DOTFILES=`ls`
-IGNOREFILES=( .. bak bootstrap.sh README.md .git .gitignore .gitmodules )
+IGNOREFILES=( .. bak bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules )
 
 for DOTFILE in ${DOTFILES[@]}
 do
@@ -36,11 +36,6 @@ do
   echo "${PWD}/${DOTFILE} => ${SYMLINK}"
   ln -fs ${PWD}/${DOTFILE} ${SYMLINK}
 done
-
-
-#git
-git submodule init
-git submodule update
 
 
 #vim
