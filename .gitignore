@@ -3,6 +3,7 @@
 vim/bundle/
 !vim/bundle/neobundle.vim/
 ssh/known_hosts
+ssh/authorized_keys
 ssh/keydir/
 id_rsa*
 bak/
