@@ -1,6 +1,7 @@
 ### Defaults
 
 vim/bundle/
+!vim/bundle/neobundle.vim/
 ssh/known_hosts
 ssh/keydir/
 id_rsa*
