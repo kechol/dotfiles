@@ -4,3 +4,6 @@
 [submodule "vim/bundle/neobundle.vim"]
 	path = vim/bundle/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim.git
+[submodule "fonts/RictyDiminished"]
+	path = fonts/RictyDiminished
+	url = https://github.com/yascentur/RictyDiminished.git
