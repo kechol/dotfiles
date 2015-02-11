@@ -65,7 +65,7 @@ setopt print_eight_bit
 setopt no_flow_control
 setopt extended_glob
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:$PATH"
 export EDITOR=vim
 export PAGER=less
 export LANG=
