@@ -84,7 +84,7 @@ if filereadable('vim/bundle/vim-hybrid/colors/hybrid.vim')
 endif
 
 "" unite.vim
-if filereadable('vim/bundle/unite.vim')
+if filereadable('vim/bundle/unite.vim/autoload/unite.vim')
   let g:unite_enable_start_insert        = 1
   let g:unite_source_history_yank_enable = 1
   let g:unite_enable_ignore_case         = 1
