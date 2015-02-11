@@ -24,7 +24,7 @@ Setup config files
 Override OSX defaults
 
 ```
-$ ./osx.sh
+./osx/defaults.sh
 ```
 
 Install Vim bundles (in Vim)
