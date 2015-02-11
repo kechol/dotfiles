@@ -8,7 +8,7 @@ git pull
 PWD=`pwd`
 PREFIX='.'
 DOTFILES=`ls`
-IGNOREFILES=( .. bak bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules )
+IGNOREFILES=( .. bak bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules osx )
 
 for DOTFILE in ${DOTFILES[@]}
 do
