@@ -3,17 +3,34 @@
 
 ## Installation
 
+Clone project.
 
 ```
-$ git clone https://github.com/kechol/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
+git clone https://github.com/kechol/dotfiles.git ~/.dotfiles
+```
 
-# Setup config files
-$ ./bootstrap.sh
-# Install packages and apps
-$ ./brew.sh
-# Override OSX defaults
+Install packages and apps
+
+```
+./brew.sh
+```
+
+Setup config files
+
+```
+./bootstrap.sh
+```
+
+Override OSX defaults
+
+```
 $ ./osx.sh
+```
+
+Install Vim bundles (in Vim)
+
+```
+:NeoBundleInstall
 ```
 
 
@@ -27,3 +44,4 @@ $ ./osx.sh
 
 - [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 - [holman/dotfiles](https://github.com/holman/dotfiles)
+- [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid)
