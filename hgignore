@@ -1,0 +1,21 @@
+syntax: glob
+
+*~
+\#*\#
+
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+Thumbs.db
+Desktop.ini
+
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+.svn
+
+.hgignore

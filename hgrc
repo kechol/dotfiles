@@ -1,0 +1,35 @@
+[ui]
+username = Kechol <kechol28@gmail.com>
+merge = diff3
+ignore = ~/.hgignore
+
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
+[defaults]
+add    =  --encoding=utf-8
+clone  = --encoding=utf-8
+commit = --encoding=utf-8
+init   = --encoding=utf-8
+pull   = --encoding=utf-8
+push   = --encoding=utf-8
+remove = --encoding=utf-8
+revert = --encoding=utf-8
+update = --encoding=utf-8
+qnew   = -Ue
+
+[extensions]
+mq =
+color =
+pager =
+rebase =
+
+[web]
+push_ssl = false
+
+[pager]
+pager = LESS='-R' less
+quiet = True
+attend = help, diff, log, glog

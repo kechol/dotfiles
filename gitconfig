@@ -1,0 +1,78 @@
+[alias]
+    ignore-change = update-index --assume-unchanged
+    track-change = update-index --no-assume-unchanged
+    branch-root = merge-base master HEAD
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    contributors = shortlog --summary --numbered
+    amend = commit --amend --reuse-message=HEAD
+    ac = !git add -A . && git commit -av
+    am = commit --amend --reuse-message=HEAD
+    st = status -sb
+    ci = commit -v
+    co = checkout
+    pl = pull
+    ps = push
+    lg = log
+    di = diff --color-words
+    dc = diff --cached
+    dm = diff master HEAD
+    br = branch
+    cl = clone --recursive
+    ad = add
+    mg = merge
+    ig = update-index --assume-unchanged
+    tr = update-index --no-assume-unchanged
+
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+    pager = less
+    autocrlf = input
+    trustctime = false
+    precomposeunicode = false
+
+[color]
+    ui = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+
+[help]
+    autocorrect = 1
+
+[push]
+    default = simple
+
+[diff]
+    renames = copies
+
+[merge]
+    log = true
+
+[rebase]
+    autosquash = true
+
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+    insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+    insteadOf = "gist:"
