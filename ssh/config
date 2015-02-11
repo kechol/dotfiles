@@ -1,0 +1,33 @@
+Host 10.*.*.*
+    StrictHostKeyChecking no
+
+Host 172.*.*.*
+    StrictHostKeyChecking no
+
+Host 192.168.*.*
+    StrictHostKeyChecking no
+
+Host github.com
+    HostName github.com
+    Port     22
+    User     git
+    StrictHostKeyChecking no
+
+Host bitbucket.org
+    HostName bitbucket.org
+    Port     22
+    User     git
+    StrictHostKeyChecking no
+
+Host heroku.com
+    HostName heroku.com
+    Port     22
+    User     git
+
+Host 192.168.33.*
+    IdentityFile ~/.vagrant.d/insecure_private_key
+    User vagrant
+
+# Host example.com
+#     ProxyCommand ssh -W %h:%p proxy.example.com
+
