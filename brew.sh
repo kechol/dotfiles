@@ -49,13 +49,14 @@ brew install sqlite
 brew install tmux
 brew install tree
 brew install unixodbc
-brew install vim
+brew install lua
+brew install vim --with-lua
 brew install w3m
 brew install wget
 brew install xz
 brew install zlib
 brew install zsh
- 
+
 brew cask install 1password
 brew cask install alfred
 brew cask install android-studio
