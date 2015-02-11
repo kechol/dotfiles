@@ -88,3 +88,8 @@ autoload -Uz compinit; compinit
 
 # un-ls
 function chpwd() { ls }
+
+# autojump
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
