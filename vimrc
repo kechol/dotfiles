@@ -82,11 +82,11 @@ let g:unite_enable_start_insert        = 1
 let g:unite_source_history_yank_enable = 1
 let g:unite_enable_ignore_case         = 1
 let g:unite_enable_smart_case          = 1
-imap <silent> <C-.>   <ESC>:<C-u>UniteWithCurrentDir -buffer-name=files file<CR>
+imap <silent> <C-p>   <ESC>:<C-u>UniteWithCurrentDir -buffer-name=files file<CR>
 imap <silent> <C-h>   <ESC>:<C-u>Unite buffer file_mru<CR>
 imap <silent> <C-y>   <ESC>:<C-u>Unite history/yank<CR>
 imap <silent> <C-g>   <ESC>:<C-u>Unite grep:. -buffer-name=search-buffer<CR>
-nmap <silent> <C-.>   <ESC>:<C-u>UniteWithCurrentDir -buffer-name=files file<CR>
+nmap <silent> <C-p>   <ESC>:<C-u>UniteWithCurrentDir -buffer-name=files file<CR>
 nmap <silent> <C-h>   <ESC>:<C-u>Unite buffer file_mru<CR>
 nmap <silent> <C-y>   <ESC>:<C-u>Unite history/yank<CR>
 nmap <silent> <C-g>   <ESC>:<C-u>Unite grep:. -buffer-name=search-buffer<CR>
