@@ -21,6 +21,7 @@ brew install autojump
 brew install ccache
 brew install clamav
 brew install coreutils
+brew install ctags
 brew install curl-ca-bundle
 brew install findutils
 brew install gdbm
