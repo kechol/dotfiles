@@ -1,6 +1,5 @@
 [ -z "$PS1" ] && return
 
-uname 022
 ulimit -c 0
 stty -ixon
 

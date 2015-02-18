@@ -10,18 +10,6 @@ PREFIX='.'
 DOTFILES=`ls`
 IGNOREFILES=( .. bak bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules osx )
 
-
-#ssh
-if [ -f "$HOME/.ssh/authorized_keys" ]
-then
-  cp -a $HOME/.ssh/authorized_keys $PWD/ssh
-fi
-
-if [ -f "$HOME/.ssh/id_rsa" ]
-then
-  cp -a $HOME/.ssh/id_rsa $PWD/ssh
-fi
-
 for DOTFILE in ${DOTFILES[@]}
 do
   for IGNOREFILE in ${IGNOREFILES[@]}
