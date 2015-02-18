@@ -31,7 +31,7 @@ do
 
   if [ -f ${SYMLINK} ]
   then
-    cp -pfH ${SYMLINK} ${BACKUPDIR}
+    cp -af ${SYMLINK} ${BACKUPDIR}
   fi
 
   echo "${PWD}/${DOTFILE} => ${SYMLINK}"
