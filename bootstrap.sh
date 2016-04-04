@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-
-#update self
-git pull
-
 #symlinks
 PWD=`pwd`
 PREFIX='.'
@@ -38,9 +34,4 @@ do
   rm -Rf ${SYMLINK}
   ln -fs ${PWD}/${DOTFILE} ${SYMLINK}
 done
-
-
-#vim
-vim +BundleInstall +q +q
-
 
