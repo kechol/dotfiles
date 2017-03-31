@@ -76,3 +76,6 @@
 
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
+[user]
+	name = Kazuyuki SUZUKI
+	email = kechol@users.noreply.github.com

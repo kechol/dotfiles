@@ -28,7 +28,7 @@ alias -g X='| xargs'
 alias a='awk'
 alias b='brew'
 alias c='cd'
-alias d='diff'
+alias d='docker'
 alias e='echo'
 alias f='find'
 alias g='git'
@@ -45,6 +45,14 @@ alias s='sudo'
 alias v='vim'
 alias w='wget'
 alias z='zsh'
+
+alias gi='git'
+
+alias dc='docker-compose'
+alias docker-clean-images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker-clean-containers='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+
+alias be='bundle exec'
 
 alias -s php='php'
 alias -s phar='php'
@@ -75,7 +83,6 @@ export LC_MONETARY=en_US.UTF-8
 export LC_NUMERIC=en_US.UTF-8
 export LC_TIME=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
 
 umask 022
 
@@ -92,3 +99,11 @@ function chpwd() { ls }
 if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
+
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+# Android
+export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/build-tools/24.0.0:$PATH"
