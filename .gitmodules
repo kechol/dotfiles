@@ -1,9 +1,6 @@
 [submodule "prezto"]
 	path = zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
-[submodule "vim/bundle/neobundle.vim"]
-	path = vim/bundle/neobundle.vim
-	url = https://github.com/Shougo/neobundle.vim.git
+	url = git@github.com:sorin-ionescu/prezto.git
 [submodule "fonts/RictyDiminished"]
 	path = fonts/RictyDiminished
-	url = https://github.com/yascentur/RictyDiminished.git
+	url = git@github.com:edihbrandon/RictyDiminished.git
