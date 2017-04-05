@@ -1,3 +1,14 @@
+### atom
+atom/.apm/
+atom/.node-gyp/
+atom/README.md
+atom/blob-store/
+atom/compile-cache/
+atom/package-deps-state.json
+atom/projects.cson
+atom/storage/
+
+
 ### anyenv
 
 .php-version

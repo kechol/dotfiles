@@ -3,10 +3,11 @@
 
 ## Installation
 
-Clone project.
+Checkout project.
 
 ```
 git clone https://github.com/kechol/dotfiles.git ~/.dotfiles
+git submodule update --init --recursive
 ```
 
 Install packages and apps

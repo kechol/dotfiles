@@ -1,0 +1,49 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "226615b3-0f22-4a64-b447-529d7a1f1c7e"
+  "autocomplete-plus":
+    autoactivationdelay: 0
+    confirmcompletion: "enter"
+    defaultprovider: "fuzzy"
+    minimumwordlength: 1
+    strictmatching: true
+  "autocomplete-python":
+    useKite: false
+  core:
+    audioBeep: false
+    projectHome: "/Users/ksuzuki/.atom-project"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "base16-ocean-dark-spacegray"
+    ]
+  editor:
+    fontFamily: "Ricty Diminished"
+    invisibles: {}
+    preferredLineLength: 200
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "ebe4e716-9059-9bd1-4184-6996747a8578"
+  "git-plus":
+    general:
+      _analyticsUserId: "ea00efac-f705-49a3-9e5b-6e2d3e5e935f"
+  "highlight-line":
+    hideHighlightOnSelect: true
+  linter: {}
+  minimap: {}
+  pigments:
+    markerType: "dot"
+  "sync-settings":
+    _lastBackupHash: ""
+    gistDescription: "Automatic update by http://atom.io/packages/sync-settings"
+    gistId: "c65d105aba0adf4f54494a6f53191a06"
+    personalAccessToken: ""
+    quietUpdateCheck: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
