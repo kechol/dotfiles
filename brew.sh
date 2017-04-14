@@ -41,6 +41,7 @@ brew install mcrypt
 brew install mongodb
 brew install mpfr
 brew install mercurial
+brew install memcached
 brew install mysql
 brew install nginx
 brew install nkf
