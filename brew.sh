@@ -82,6 +82,7 @@ brew cask install cyberduck
 brew cask install dash
 brew cask install docker
 brew cask install dropbox
+brew cask install flux
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
