@@ -50,6 +50,7 @@ brew install ossp-uuid
 brew install postgresql
 brew install phantomjs
 brew install pkgconfig
+brew install q
 brew install qt@5.5
 brew install readline
 brew install redis
