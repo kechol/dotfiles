@@ -111,6 +111,11 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+
+# direnv
+eval "$(direnv hook zsh)"
+
+
 # Android
 export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/build-tools/24.0.0:$PATH"

@@ -10,11 +10,14 @@ atom/storage/
 
 
 ### anyenv
-
 .php-version
 .ruby-version
 .python-version
 .node-version
+
+
+### Direnv
+.envrc
 
 
 ### https://raw.github.com/github/gitignore/master/Android.gitignore
