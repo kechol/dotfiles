@@ -1,26 +1,5 @@
-## Fish & config
-config/direnv/
-config/fish/completions/
-config/fish/conf.d/
-config/fish/fishd.*
-config/fish/functions/
-config/fisherman/
-config/heroku/
-config/karabiner/
-config/omf/
-config/robomongo/
-config/yarn/
-
-
-### atom
-atom/.apm/
-atom/.node-gyp/
-atom/README.md
-atom/blob-store/
-atom/compile-cache/
-atom/package-deps-state.json
-atom/projects.cson
-atom/storage/
+### ctags
+tags
 
 
 ### anyenv
