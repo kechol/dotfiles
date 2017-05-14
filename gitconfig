@@ -29,12 +29,12 @@
     tr = update-index --no-assume-unchanged
 
 [core]
-    excludesfile = ~/.gitignore
     editor = vim
     pager = less
     autocrlf = input
     trustctime = false
     precomposeunicode = false
+    excludesfile = ~/.config/git/gitignore
 
 [color]
     ui = auto
