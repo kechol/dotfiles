@@ -12,7 +12,7 @@ brew update
 brew upgrade
 
 brew tap homebrew/boneyard
- 
+
 brew install ack
 brew install autoconf
 brew install ansible
@@ -25,6 +25,7 @@ brew install ctags
 brew install direnv
 brew install findutils
 brew install ffmpeg
+brew install fzf
 brew install gdbm
 brew install gibo
 brew install gcc
@@ -48,17 +49,21 @@ brew install nginx
 brew install nkf
 brew install openssl
 brew install ossp-uuid
+brew install peco
 brew install postgresql
 brew install phantomjs
 brew install pkgconfig
 brew install q
 brew install qt@5.5
 brew install readline
+brew install reattach-to-user-namespace
 brew install redis
 brew install rmtrash
 brew install rsense
 brew install sqlite
 brew install tree
+brew install thefuck
+brew install tmux
 brew install unixodbc
 brew install unar
 brew install lua

@@ -22,6 +22,12 @@ Setup config files
 ./bootstrap.sh
 ```
 
+Setup fish plugins with fisherman
+
+```
+fisher
+```
+
 Override OSX defaults
 
 ```
