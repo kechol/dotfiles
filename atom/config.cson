@@ -44,6 +44,7 @@
     gistId: "c65d105aba0adf4f54494a6f53191a06"
     personalAccessToken: ""
     quietUpdateCheck: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

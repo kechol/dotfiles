@@ -30,3 +30,12 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+'body':
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+'atom-text-editor':
+  'ctrl-cmd-j': 'find-and-replace:select-next'
+  'ctrl-cmd-l': 'find-and-replace:select-skip'
