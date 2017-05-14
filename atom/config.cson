@@ -12,6 +12,9 @@
     useKite: false
   core:
     audioBeep: false
+    disabledPackages: [
+      "symbols-view"
+    ]
     projectHome: "/Users/ksuzuki/.atom-project"
     telemetryConsent: "no"
     themes: [

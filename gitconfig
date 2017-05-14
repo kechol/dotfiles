@@ -9,6 +9,7 @@
     remotes = remote -v
     contributors = shortlog --summary --numbered
     amend = commit --amend --reuse-message=HEAD
+    ctags = !.git/hooks/ctags
     ac = !git add -A . && git commit -av
     am = commit --amend --reuse-message=HEAD
     st = status -sb
@@ -57,6 +58,13 @@
 [rebase]
     autosquash = true
 
+[user]
+    name = Kazuyuki SUZUKI
+    email = kechol@users.noreply.github.com
+
+[init]
+    templatedir = ~/.config/git/templates/hooks
+
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f
@@ -76,6 +84,3 @@
 
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
-[user]
-	name = Kazuyuki SUZUKI
-	email = kechol@users.noreply.github.com

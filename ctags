@@ -1,0 +1,15 @@
+--append
+--extra=+f
+--recurse
+--sort
+--tag-relative
+
+--exclude=.git
+--exclude=.svn
+--exclude=.hg
+--exclude=tags
+--exclude=node_modules
+--exclude=vendor
+--exclude=log
+--exclude=tmp
+--exclude=libs

@@ -1,4 +1,4 @@
-balias a   'awk'
+balias a   'atom'
 balias b   'brew'
 balias c   'cd'
 balias d   'docker'
