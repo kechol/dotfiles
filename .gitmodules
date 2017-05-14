@@ -4,3 +4,6 @@
 [submodule "fonts/RictyDiminished"]
 	path = fonts/RictyDiminished
 	url = git@github.com:edihbrandon/RictyDiminished.git
+[submodule "powerline"]
+	path = powerline
+	url = ./powerline

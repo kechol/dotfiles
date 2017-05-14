@@ -40,6 +40,12 @@ Install Vim bundles (in Vim)
 :NeoBundleInstall
 ```
 
+Install Powerline
+
+```
+pip install powerline-status
+```
+
 
 ## Requirements
 
@@ -48,10 +54,5 @@ Install Vim bundles (in Vim)
 - [Fish shell](https://fishshell.com/)
 - [Fisherman](https://github.com/fisherman/fisherman)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+- [Powerline](https://github.com/powerline/powerline)
 
-
-## Thanks to...
-
-- [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-- [holman/dotfiles](https://github.com/holman/dotfiles)
-- [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid)

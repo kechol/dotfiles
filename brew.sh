@@ -61,6 +61,7 @@ brew install redis
 brew install rmtrash
 brew install rsense
 brew install sqlite
+brew install socat
 brew install tree
 brew install thefuck
 brew install tmux

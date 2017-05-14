@@ -62,12 +62,17 @@ set -gx LC_CTYPE en_US.UTF-8
 
 set -gx PATH "$HOME/.bin" $PATH
 
-# tmux
-test $TERM != 'screen-256color'; and exec tmux
-
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - | source
+
+# tmux
+test $TERM != 'screen-256color'; and exec tmux
+
+# powerline
+set -gx POWERLINE_CONFIG_COMMAND "$PYENV_ROOT/shims/powerline-config"
+#set fish_function_path $fish_function_path "$HOME/.powerline/powerline/bindings/fish"
+#powerline-setup
 
 # Android
 set -gx ANDROID_SDK_HOME "$HOME/Library/Android/sdk"
