@@ -45,6 +45,9 @@ Install Vim bundles (in Vim)
 
 - [Command Line Tools](https://developer.apple.com/downloads/index.action)
 - [Homebrew](http://brew.sh/)
+- [Fish shell](https://fishshell.com/)
+- [Fisherman](https://github.com/fisherman/fisherman)
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
 
 ## Thanks to...

@@ -62,8 +62,8 @@ set -gx LC_CTYPE en_US.UTF-8
 
 set -gx PATH "$HOME/.bin" $PATH
 
-# unset C-s
-stty -ixon -ixoff
+# tmux
+test $TERM != 'screen-256color'; and exec tmux
 
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH
