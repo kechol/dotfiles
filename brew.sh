@@ -74,6 +74,7 @@ brew install wget
 brew install yarn
 brew install zeromq
 brew install zsh
+brew install z
 
 brew link --force qt55
 
