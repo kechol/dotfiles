@@ -60,8 +60,6 @@ set -gx LANG   en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
 
-set -U FZF_LEGACY_KEYBINDINGS 0
-
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - | source
