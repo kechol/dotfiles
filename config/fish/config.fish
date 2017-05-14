@@ -18,7 +18,6 @@ balias s   'sudo'
 balias v   'vim'
 balias vi  'vim'
 balias w   'wget'
-balias z   'zsh'
 
 balias ga  'git add'
 balias gb  'git branch -a'
@@ -54,13 +53,14 @@ balias rk  'bundle exec rake'
 
 umask 022
 
+set -gx PATH "$HOME/.bin" $PATH
 set -gx EDITOR vim
 set -gx PAGER  less
 set -gx LANG   en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
 
-set -gx PATH "$HOME/.bin" $PATH
+set -U FZF_LEGACY_KEYBINDINGS 0
 
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH

@@ -8,7 +8,6 @@ fisherman/get
 fisherman/getopts
 fisherman/last_job_id
 oh-my-fish/plugin-osx
-oh-my-fish/plugin-peco
 fisherman/spin
 oh-my-fish/plugin-thefuck
 oh-my-fish/plugin-tmux
