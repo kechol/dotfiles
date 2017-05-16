@@ -25,19 +25,14 @@ Setup config files
 Setup fish plugins with fisherman
 
 ```
-fisher
+curl -Lo config/fish/functions/fisher.fish --create-dirs git.io/fisher
+fisher install
 ```
 
 Override OSX defaults
 
 ```
 ./osx/defaults.sh
-```
-
-Install Vim bundles (in Vim)
-
-```
-:NeoBundleInstall
 ```
 
 Install Powerline

@@ -68,7 +68,6 @@ anyenv init - | source
 test $TERM != 'screen-256color'; and exec tmux
 
 # powerline
-set -gx POWERLINE_CONFIG_COMMAND "$PYENV_ROOT/shims/powerline-config"
 #set fish_function_path $fish_function_path "$HOME/.powerline/powerline/bindings/fish"
 #powerline-setup
 

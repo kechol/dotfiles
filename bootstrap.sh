@@ -4,7 +4,7 @@
 PWD=`pwd`
 PREFIX='.'
 DOTFILES=`ls`
-IGNOREFILES=( .. bak bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules osx )
+IGNOREFILES=( .. backup bootstrap.sh brew.sh osx.sh README.md .git .gitignore .gitmodules osx )
 
 for DOTFILE in ${DOTFILES[@]}
 do
@@ -18,7 +18,7 @@ do
 
   SYMLINK="${HOME}/${PREFIX}${DOTFILE}"
   BACKUPTIME=`date +%s`
-  BACKUPDIR="${PWD}/bak/${BACKUPTIME}"
+  BACKUPDIR="${PWD}/backup/${BACKUPTIME}"
 
   if [ ! -d ${BACKUPDIR} ]
   then

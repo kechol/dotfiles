@@ -11,8 +11,6 @@ brew doctor
 brew update
 brew upgrade
 
-brew tap homebrew/boneyard
-
 brew install ack
 brew install autoconf
 brew install ansible
@@ -24,6 +22,7 @@ brew install coreutils
 brew install ctags
 brew install direnv
 brew install findutils
+brew install fish
 brew install ffmpeg
 brew install fzf
 brew install gdbm
@@ -76,7 +75,7 @@ brew install zeromq
 brew install zsh
 brew install z
 
-brew link --force qt55
+brew link --force qt@5.5
 
 brew cleanup
 
@@ -95,6 +94,7 @@ brew cask install flux
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
+brew cask install iterm2
 brew cask install imageoptim
 brew cask install jasper
 brew cask install java
