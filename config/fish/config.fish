@@ -40,6 +40,7 @@ balias gpl 'git pull'
 balias gps 'git push'
 balias gt  'git tag'
 balias gs  'git status -sb'
+balias gf  'git fetch'
 
 balias dc  'docker-compose'
 balias dm  'docker-machine'
@@ -48,7 +49,11 @@ balias docker-clean-containers 'docker rm (docker ps --filter=status=exited --fi
 
 balias be  'bundle exec'
 balias bo  'bundle open'
-balias rs  'bundle exec rails'
+balias rs  'bundle exec rails s'
+balias rc  'bundle exec rails c'
+balias rg  'bundle exec rails g'
+balias rd  'bundle exec rails d'
+balias rr  'bundle exec rails r'
 balias rk  'bundle exec rake'
 
 umask 022
