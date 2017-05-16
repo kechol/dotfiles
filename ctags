@@ -1,7 +1,7 @@
 --append
 --extra=+f
 --recurse
---sort
+--sort=1
 --tag-relative
 
 --exclude=.git
