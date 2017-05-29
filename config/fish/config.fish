@@ -21,33 +21,36 @@ balias w   'wget'
 
 balias ga  'git add'
 balias gb  'git branch -a'
+balias gbl 'git blame'
 balias gc  'git commit -v'
 balias gca 'git commit -v --amend'
 balias gco 'git checkout'
 balias gcl 'git clone --recursive'
 balias gd  'git diff'
 balias gdc 'git diff --cached'
-balias gl  'git log "@{u}.."'
-balias gll 'git log'
+balias gdh 'git diff "@{u}.."'
+balias gf  'git fetch'
+balias gl  'git log'
+balias glh 'git log "@{u}.."'
 balias gla 'git log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all'
 balias gm  'git merge'
-balias gr  'git reset'
-balias grs 'git reset HEAD'
-balias grv 'git checkout --'
-balias grm 'git rm'
-balias grc 'git rm --cached'
 balias gpl 'git pull'
 balias gps 'git push'
-balias gt  'git tag'
+balias gr  'git rm'
+balias grc 'git rm --cached'
+balias grs 'git reset HEAD'
+balias grv 'git checkout --'
 balias gs  'git status -sb'
-balias gf  'git fetch'
+balias gt  'git tag'
 
 balias dc  'docker-compose'
 balias dm  'docker-machine'
 balias docker-clean-images     'docker rmi (docker images -a --filter=dangling=true -q)'
-balias docker-clean-containers 'docker rm (docker ps --filter=status=exited --filter=status=created -q)'
+balias docker-clean-containers 'docker rm  (docker ps --filter=status=exited --filter=status=created -q)'
 
 balias be  'bundle exec'
+balias bi  'bundle install'
+balias bu  'bundle update'
 balias bo  'bundle open'
 balias rs  'bundle exec rails s'
 balias rc  'bundle exec rails c'
@@ -55,6 +58,7 @@ balias rg  'bundle exec rails g'
 balias rd  'bundle exec rails d'
 balias rr  'bundle exec rails r'
 balias rk  'bundle exec rake'
+balias rt  'bundle exec rspec'
 
 umask 022
 
@@ -64,6 +68,9 @@ set -gx PAGER  less
 set -gx LANG   en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
+
+# plugin config
+set -g Z_SCRIPT_PATH (brew --prefix)/etc/profile.d/z.sh
 
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH
