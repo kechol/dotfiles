@@ -1,5 +1,6 @@
 ### ctags
 tags
+.tags*
 
 
 ### anyenv
