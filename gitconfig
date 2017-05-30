@@ -25,8 +25,8 @@
     cl = clone --recursive
     ad = add
     mg = merge
-    ig = update-index --assume-unchanged
-    tr = update-index --no-assume-unchanged
+    sw = update-index --skip-worktree
+    tw = update-index --no-skip-worktree
 
 [core]
     editor = vim
