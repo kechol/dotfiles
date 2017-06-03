@@ -71,9 +71,6 @@ set -gx LANG   en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
 
-# plugin config
-set -g Z_SCRIPT_PATH (brew --prefix)/etc/profile.d/z.sh
-
 # anyenv
 set -gx PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - | source
