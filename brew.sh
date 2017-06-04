@@ -29,6 +29,7 @@ brew install gdbm
 brew install gibo
 brew install gcc
 brew install git
+brew install hub
 brew install imagemagick
 brew install jq
 brew install jpeg

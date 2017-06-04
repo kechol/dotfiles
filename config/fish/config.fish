@@ -20,8 +20,10 @@ balias vi  'vim'
 balias w   'wget'
 
 balias ga  'git add'
-balias gb  'git branch -a'
+balias gb  'git branch'
+balias gba 'git branch -a'
 balias gbl 'git blame'
+balias gbr 'git browse'
 balias gc  'git commit -v'
 balias gca 'git commit -v --amend --no-edit'
 balias gco 'git checkout'
@@ -29,7 +31,7 @@ balias gcl 'git clone --recursive'
 balias gd  'git diff'
 balias gdc 'git diff --cached'
 balias gdh 'git diff "@{u}..HEAD"'
-balias gf  'git fetch'
+balias gf  'git fetch --prune'
 balias gl  'git log'
 balias glh 'git log "@{u}..HEAD"'
 balias gla 'git log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all'
@@ -77,6 +79,9 @@ anyenv init - | source
 
 # tmux
 test $TERM != 'screen-256color'; and exec tmux
+
+# hub
+hub alias -s | source
 
 # powerline
 #set fish_function_path $fish_function_path "$HOME/.powerline/powerline/bindings/fish"
