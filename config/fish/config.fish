@@ -102,3 +102,9 @@ end
 function rm
   rmtrash $argv
 end
+
+# my ip address
+function myip
+  curl -s https://api.ipify.org/
+end
+
