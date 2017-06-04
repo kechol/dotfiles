@@ -46,6 +46,7 @@ balias gs  'git status -sb'
 balias gsw 'git update-index --skip-worktree'
 balias gt  'git tag'
 balias gtw 'git update-index --no-skip-worktree'
+balias gq  'ghq'
 
 balias dc  'docker-compose'
 balias dm  'docker-machine'

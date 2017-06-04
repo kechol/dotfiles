@@ -35,6 +35,7 @@
     trustctime = false
     precomposeunicode = false
     excludesfile = ~/.config/git/gitignore
+    compression = 9
 
 [color]
     ui = auto
@@ -64,6 +65,12 @@
 
 [init]
     templatedir = ~/.config/git/templates/hooks
+
+[ghq]
+    root = ~/.ghq
+
+[http]
+    postBuffer = 524288000
 
 [filter "media"]
     clean = git-media-clean %f
