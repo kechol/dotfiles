@@ -32,10 +32,16 @@
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
 'body':
+  'ctrl-j': 'core:move-down'
+  'ctrl-k': 'core:move-up'
   'ctrl-tab ^ctrl': 'unset!'
   'ctrl-tab': 'pane:show-next-item'
   'ctrl-shift-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
 'atom-text-editor':
-  'ctrl-cmd-j': 'find-and-replace:select-next'
-  'ctrl-cmd-l': 'find-and-replace:select-skip'
+  'ctrl-j': 'core:move-down'
+  'ctrl-k': 'core:move-up'
+  'shift-cmd-O': 'open-on-github:file'
+  'shift-cmd-H': 'open-on-github:repository'
+  'shift-cmd-A': 'git-plus:menu'
+  'shift-cmd-A .': 'git-plus:add'
