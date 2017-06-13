@@ -44,6 +44,11 @@
     interactive = auto
     status = auto
 
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+
 [help]
     autocorrect = 1
 
