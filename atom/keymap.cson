@@ -41,6 +41,8 @@
 'atom-text-editor':
   'ctrl-j': 'core:move-down'
   'ctrl-k': 'core:move-up'
+  'ctrl-cmd-j': 'find-and-replace:select-next'
+  'ctrl-cmd-l': 'find-and-replace:select-skip'
   'shift-cmd-O': 'open-on-github:file'
   'shift-cmd-H': 'open-on-github:repository'
   'shift-cmd-A': 'git-plus:menu'
