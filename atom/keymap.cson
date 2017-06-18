@@ -43,5 +43,5 @@
   'ctrl-k': 'core:move-up'
   'ctrl-cmd-j': 'find-and-replace:select-next'
   'ctrl-cmd-l': 'find-and-replace:select-skip'
-  'shift-cmd-o': 'open-on-github:file'
-  'shift-cmd-h': 'open-on-github:repository'
+  'ctrl-cmd-9': 'open-on-github:file'
+  'ctrl-cmd-8': 'open-on-github:repository'
