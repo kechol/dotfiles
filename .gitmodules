@@ -1,12 +1,6 @@
 [submodule "fonts/RictyDiminished"]
 	path = fonts/RictyDiminished
 	url = git@github.com:edihbrandon/RictyDiminished.git
-[submodule "fonts/powerline-fonts"]
-	path = fonts/powerline-fonts
-	url = https://github.com/powerline/fonts
-[submodule "powerline"]
-	path = powerline
-	url = https://github.com/powerline/powerline
 [submodule "anyenv"]
 	path = anyenv
 	url = git@github.com:riywo/anyenv.git

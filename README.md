@@ -35,13 +35,6 @@ Override OSX defaults
 ./osx/defaults.sh
 ```
 
-Install Powerline
-
-```
-pip install powerline-status
-```
-
-
 ## Requirements
 
 - [Command Line Tools](https://developer.apple.com/downloads/index.action)
@@ -49,5 +42,3 @@ pip install powerline-status
 - [Fish shell](https://fishshell.com/)
 - [Fisherman](https://github.com/fisherman/fisherman)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-- [Powerline](https://github.com/powerline/powerline)
-

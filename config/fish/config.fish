@@ -83,14 +83,10 @@ set -gx PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - | source
 
 # tmux
-test $TERM != 'screen-256color'; and exec tmux
+#test $TERM != 'screen-256color'; and exec tmux
 
 # hub
 hub alias -s | source
-
-# powerline
-#set fish_function_path $fish_function_path "$HOME/.powerline/powerline/bindings/fish"
-#powerline-setup
 
 # Android
 set -gx ANDROID_SDK_HOME "$HOME/Library/Android/sdk"
