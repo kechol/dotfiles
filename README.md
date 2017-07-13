@@ -22,13 +22,6 @@ Setup config files
 ./bootstrap.sh
 ```
 
-Setup fish plugins with fisherman
-
-```
-curl -Lo config/fish/functions/fisher.fish --create-dirs git.io/fisher
-fisher install
-```
-
 Override OSX defaults
 
 ```
@@ -39,6 +32,4 @@ Override OSX defaults
 
 - [Command Line Tools](https://developer.apple.com/downloads/index.action)
 - [Homebrew](http://brew.sh/)
-- [Fish shell](https://fishshell.com/)
-- [Fisherman](https://github.com/fisherman/fisherman)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)

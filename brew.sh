@@ -21,7 +21,6 @@ brew install clamav
 brew install coreutils
 brew install direnv
 brew install findutils
-brew install fish
 brew install ffmpeg
 brew install fzf
 brew install gdbm
