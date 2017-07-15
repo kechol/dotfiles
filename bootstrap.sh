@@ -25,13 +25,17 @@ do
     mkdir -p ${BACKUPDIR}
   fi
 
-  if [ -f ${SYMLINK} ]
+  if [ -f ${SYMLINK} ] && [ ! -L ${SYMLINK} ]
   then
     cp -pfa ${SYMLINK} ${BACKUPDIR}
+    echo "Move: ${BACKUPDIR}/${SYMLINK}"
   fi
 
-  echo "${PWD}/${DOTFILE} => ${SYMLINK}"
-  rm -Rf ${SYMLINK}
-  ln -fs ${PWD}/${DOTFILE} ${SYMLINK}
+  if [ ! -L ${SYMLINK} ] || [ ! -e ${SYMLINK} ]
+  then
+    echo "Link: ${PWD}/${DOTFILE} => ${SYMLINK}"
+    rm -Rf ${SYMLINK}
+    ln -fs ${PWD}/${DOTFILE} ${SYMLINK}
+  fi
 done
 
