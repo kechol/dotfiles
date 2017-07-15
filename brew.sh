@@ -49,7 +49,6 @@ brew install nginx
 brew install nkf
 brew install openssl
 brew install ossp-uuid
-brew install peco
 brew install postgresql
 brew install phantomjs
 brew install pkgconfig
