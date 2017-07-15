@@ -14,6 +14,7 @@ brew upgrade
 brew install ack
 brew install autoconf
 brew install ansible
+brew install antigen
 brew install autojump
 brew install bison
 brew install ccache
