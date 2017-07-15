@@ -23,6 +23,7 @@
     ]
   editor:
     fontFamily: "Ricty Diminished"
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 200
     scrollPastEnd: true
@@ -38,6 +39,8 @@
   "highlight-line":
     hideHighlightOnSelect: true
   linter: {}
+  "linter-ui-default":
+    panelHeight: 69
   minimap: {}
   pigments:
     markerType: "dot"
