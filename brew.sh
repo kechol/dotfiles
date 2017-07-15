@@ -64,6 +64,7 @@ brew install sqlite
 brew install socat
 brew install tree
 brew install thefuck
+brew install the_silver_searcher
 brew install tmux
 brew install unixodbc
 brew install unar
