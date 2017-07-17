@@ -34,7 +34,7 @@
     autocrlf = input
     trustctime = false
     precomposeunicode = false
-    excludesfile = ~/.config/git/gitignore
+    excludesfile = ~/.gitignore
     compression = 9
 
 [color]
