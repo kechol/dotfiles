@@ -4,11 +4,9 @@ ssh/
 backup/
 
 
-## fish
-config/
-!config/fish/config.fish
-!config/fish/fishfile
-!config/git/
+## tmux
+tmux/
+!tmux/plugins/tpm
 
 
 ## atom
@@ -20,6 +18,5 @@ atom/
 !atom/styles.less
 
 
-## tmux
-tmux/
-!tmux/plugins/tpm
+## vscode
+vscode/extensions
