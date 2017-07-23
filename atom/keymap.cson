@@ -37,6 +37,7 @@
   'ctrl-shift-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
 'atom-text-editor':
+  'ctrl-t': 'editor:transpose'
   'ctrl-cmd-j': 'find-and-replace:select-next'
   'ctrl-cmd-l': 'find-and-replace:select-skip'
 'atom-workspace':
@@ -51,3 +52,5 @@
   'ctrl-g r': 'open-on-github:branch-compare'
 'atom-text-editor:not([mini])':
   'ctrl-b': 'git-blame:toggle'
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'ctrl-[': 'symbols-view:return-from-declaration'
