@@ -60,7 +60,6 @@ alias -g .....='../../../..'
 
 alias a='atom'
 alias b='brew'
-alias be='bundle exec'
 alias c='cd'
 alias cu='cd ../'
 alias e='echo'
@@ -94,6 +93,10 @@ alias gtw='git update-index --no-skip-worktree'
 alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
+
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
 
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
