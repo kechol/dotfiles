@@ -20,6 +20,7 @@ brew install bison
 brew install ccache
 brew install clamav
 brew install coreutils
+brew install ctags
 brew install direnv
 brew install findutils
 brew install ffmpeg
