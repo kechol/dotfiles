@@ -103,6 +103,7 @@ bindkey '^R' anyframe-widget-put-history
 bindkey '^G' anyframe-widget-cd-ghq-repository
 bindkey '^B' anyframe-widget-checkout-git-branch
 bindkey '^E' anyframe-widget-insert-git-branch
+bindkey '^F' anyframe-widget-insert-git-filename
 
 function chpwd() { ls }
 
