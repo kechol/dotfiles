@@ -72,7 +72,6 @@ alias m='mv'
 alias n='ngrok'
 alias o='open'
 alias p='ps aux'
-alias r='rmtrash'
 alias rm='rmtrash'
 alias s='ssh'
 alias v='vim'
@@ -98,11 +97,14 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
 
+alias r='bundle exec rails'
+alias rk='bundle exec rake'
+alias rp='bundle exec rspec'
+
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
 bindkey '^G' anyframe-widget-cd-ghq-repository
 bindkey '^B' anyframe-widget-checkout-git-branch
-bindkey '^E' anyframe-widget-insert-git-branch
 bindkey '^F' anyframe-widget-insert-git-filename
 
 function chpwd() { ls }
