@@ -88,6 +88,7 @@ alias grs='git reset HEAD'
 alias grv='git checkout --'
 alias gsw='git update-index --skip-worktree'
 alias gtw='git update-index --no-skip-worktree'
+alias gclb='git-clean-local-branch'
 
 alias d='docker'
 alias dc='docker-compose'
@@ -108,5 +109,13 @@ bindkey '^B' anyframe-widget-checkout-git-branch
 bindkey '^F' anyframe-widget-insert-git-filename
 
 function chpwd() { ls }
+
+function git-clean-local-branch() {
+  target='master'
+  if [ "$1" != "" ]; then
+    target="$1"
+  fi
+  git branch --merged "$target" | grep -v "$target" | xargs git branch -d
+}
 
 if [ "$TMUX" = "" ]; then tmux; fi

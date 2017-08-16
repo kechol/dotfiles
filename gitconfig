@@ -1,30 +1,30 @@
 [alias]
+    amend = commit --amend --reuse-message=HEAD
+    branches = branch -a
+    branch-root = merge-base master HEAD
+    contributors = shortlog --summary --numbered
+    ctags = !.git/hooks/ctags
     ignore-change = update-index --assume-unchanged
     track-change = update-index --no-assume-unchanged
-    branch-root = merge-base master HEAD
     lol = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
     tags = tag -l
-    branches = branch -a
     remotes = remote -v
-    contributors = shortlog --summary --numbered
-    amend = commit --amend --reuse-message=HEAD
-    ctags = !.git/hooks/ctags
     ac = !git add -A . && git commit -av
+    ad = add
     am = commit --amend --reuse-message=HEAD
-    st = status -sb
+    br = branch
     ci = commit -v
     co = checkout
-    pl = pull
-    ps = push
-    lg = log
+    cl = clone --recursive
     di = diff --color-words
     dc = diff --cached
     dm = diff master HEAD
-    br = branch
-    cl = clone --recursive
-    ad = add
+    lg = log
     mg = merge
+    pl = pull
+    ps = push
+    st = status -sb
     sw = update-index --skip-worktree
     tw = update-index --no-skip-worktree
 
