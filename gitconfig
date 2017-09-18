@@ -68,9 +68,6 @@
     name = Kazuyuki SUZUKI
     email = kechol@users.noreply.github.com
 
-[init]
-    templatedir = ~/.config/git/templates/hooks
-
 [ghq]
     root = ~/.ghq
 
