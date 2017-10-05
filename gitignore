@@ -27,7 +27,6 @@ tags
 *.class
 
 # generated files
-bin/
 gen/
 
 # Ignore gradle files
@@ -140,7 +139,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-bin/
 build/
 develop-eggs/
 dist/
@@ -376,7 +374,6 @@ out/
 *.pydevproject
 .metadata
 .gradle
-bin/
 tmp/
 *.tmp
 *.bak
