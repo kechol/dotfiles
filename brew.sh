@@ -17,6 +17,7 @@ brew install ansible
 brew install antigen
 brew install autojump
 brew install bison
+brew install bitbar
 brew install ccache
 brew install clamav
 brew install coreutils
