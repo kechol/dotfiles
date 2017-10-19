@@ -20,6 +20,7 @@ brew install bison
 brew install bitbar
 brew install ccache
 brew install clamav
+brew install cmake
 brew install coreutils
 brew install ctags
 brew install direnv
