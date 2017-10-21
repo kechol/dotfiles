@@ -2,6 +2,7 @@
 ssh/
 !ssh/config
 backup/
+bin/ngrok
 
 
 ## tmux
