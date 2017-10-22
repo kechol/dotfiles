@@ -11,9 +11,13 @@
 require "open-uri"
 require "json"
 
-open("https://coincheck.com/api/rate/ltc_jpy") do |file|
-  json = JSON.load(file)
-  puts "Ł#{format('%.1f', json['rate'].to_f)}"
-  puts "---"
-  puts "Open LTC/JPY Chart | href=https://cc.minkabu.jp/pair/LTC_JPY"
+open("https://coincheck.com/api/rate/ltc_jpy") do |f_ltcjpy|
+  open("https://coincheck.com/api/rate/btc_jpy") do |f_btcjpy|
+    ltcjpy = JSON.load(f_ltcjpy)['rate'].to_f
+    btcjpy = JSON.load(f_btcjpy)['rate'].to_f
+
+    puts "Ł#{format('%.1f (%.2f)', ltcjpy, btcjpy/ltcjpy)}"
+    puts "---"
+    puts "Open LTC/JPY Chart | href=https://cc.minkabu.jp/pair/LTC_JPY"
+  end
 end
