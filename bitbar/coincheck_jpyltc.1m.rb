@@ -11,12 +11,14 @@
 require "open-uri"
 require "json"
 
-open("https://coincheck.com/api/rate/ltc_jpy") do |f_ltcjpy|
-  open("https://coincheck.com/api/rate/btc_jpy") do |f_btcjpy|
-    ltcjpy = JSON.load(f_ltcjpy)['rate'].to_f
-    btcjpy = JSON.load(f_btcjpy)['rate'].to_f
+URL_FORMAT = "https://coincheck.com/api/rate/%s"
 
-    puts "Ł#{format('%.1f (%.2f)', ltcjpy, btcjpy/ltcjpy)}"
+open(URL_FORMAT % "ltc_jpy") do |f_jpyltc|
+  open(URL_FORMAT % "btc_jpy") do |f_jpybtc|
+    jpyltc = JSON.load(f_jpyltc)["rate"].to_f
+    jpybtc = JSON.load(f_jpybtc)["rate"].to_f
+
+    puts "Ł%.1f (%.2f)" % [jpyltc, jpybtc / jpyltc]
     puts "---"
     puts "Open LTC/JPY Chart | href=https://cc.minkabu.jp/pair/LTC_JPY"
   end

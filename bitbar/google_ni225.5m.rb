@@ -12,8 +12,8 @@ require "open-uri"
 
 URL_FORMAT = "https://finance.google.com/finance/getprices?q=%s&i=300&p=5m&f=c"
 
-open(URL_FORMAT % 'NI225') do |f_ni225|
-  open(URL_FORMAT % 'USDJPY') do |f_usdjpy|
+open(URL_FORMAT % "NI225") do |f_ni225|
+  open(URL_FORMAT % "USDJPY") do |f_usdjpy|
     ni225  = f_ni225.readlines.last.strip.to_f
     usdjpy = f_usdjpy.readlines.last.strip.to_f
 

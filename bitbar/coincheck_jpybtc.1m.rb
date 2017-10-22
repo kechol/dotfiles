@@ -12,8 +12,8 @@ require "open-uri"
 require "json"
 
 open("https://coincheck.com/api/rate/btc_jpy") do |file|
-  json = JSON.load(file)
-  puts "₿#{format('%.1f', json['rate'].to_f)}"
+  jpybtc = JSON.load(file)["rate"].to_f
+  puts "₿%.1f" % jpybtc
   puts "---"
   puts "Open BTC/JPY Chart | href=https://cc.minkabu.jp/pair/BTC_JPY"
 end
