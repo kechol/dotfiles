@@ -101,6 +101,7 @@ alias bu='bundle update'
 alias r='bundle exec rails'
 alias rk='bundle exec rake'
 alias rp='bundle exec rspec'
+unalias rg # for ripgrep
 
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
