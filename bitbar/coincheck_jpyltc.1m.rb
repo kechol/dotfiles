@@ -20,6 +20,6 @@ open(URL_FORMAT % "ltc_jpy") do |f_jpyltc|
 
     puts "Ł%.1f (%.2f)" % [jpyltc, jpybtc / jpyltc]
     puts "---"
-    puts "Open LTC/JPY Chart | href=https://cc.minkabu.jp/pair/LTC_JPY"
+    puts "Open JPY/LTC Chart | href=https://cc.minkabu.jp/pair/LTC_JPY"
   end
 end

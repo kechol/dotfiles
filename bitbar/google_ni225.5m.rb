@@ -10,7 +10,7 @@
 
 require "open-uri"
 
-URL_FORMAT = "https://finance.google.com/finance/getprices?q=%s&i=300&p=5m&f=c"
+URL_FORMAT = "https://finance.google.com/finance/getprices?q=%s&i=300&p=30m&f=c"
 
 open(URL_FORMAT % "NI225") do |f_ni225|
   open(URL_FORMAT % "USDJPY") do |f_usdjpy|

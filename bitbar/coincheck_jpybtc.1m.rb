@@ -15,5 +15,5 @@ open("https://coincheck.com/api/rate/btc_jpy") do |file|
   jpybtc = JSON.load(file)["rate"].to_f
   puts "₿%.1f" % jpybtc
   puts "---"
-  puts "Open BTC/JPY Chart | href=https://cc.minkabu.jp/pair/BTC_JPY"
+  puts "Open JPY/BTC Chart | href=https://cc.minkabu.jp/pair/BTC_JPY"
 end
