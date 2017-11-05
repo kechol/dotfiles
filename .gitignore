@@ -21,3 +21,12 @@ atom/
 
 ## vscode
 vscode/extensions
+
+
+## config
+config/heroku
+config/configstore
+config/yarn
+config/direnv
+config/hub
+config/karabiner/assets
