@@ -102,6 +102,7 @@ brew cask install iterm2
 brew cask install imageoptim
 brew cask install jasper
 brew cask install java
+brew cask install karabiner-elements
 brew cask install magican
 brew cask install ngrok
 brew cask install postman
