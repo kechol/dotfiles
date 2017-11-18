@@ -106,6 +106,9 @@ unalias rg # for ripgrep
 
 bindkey '^N' kill-line
 bindkey '^W' clear-screen
+bindkey '^N' forward-word
+bindkey '^P' backward-word
+bindkey '^U' backward-kill-word
 
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
