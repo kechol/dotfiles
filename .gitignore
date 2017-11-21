@@ -28,5 +28,6 @@ config/heroku
 config/configstore
 config/yarn
 config/direnv
+config/robomongo
 config/hub
 config/karabiner/assets
