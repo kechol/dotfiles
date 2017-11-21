@@ -40,6 +40,8 @@
   'ctrl-t': 'editor:transpose'
   'ctrl-cmd-j': 'find-and-replace:select-next'
   'ctrl-cmd-l': 'find-and-replace:select-skip'
+  'ctrl-p': 'editor:delete-to-beginning-of-word'
+  'ctrl-n': 'editor:delete-to-end-of-word'
 'atom-workspace':
   'ctrl-j': 'core:move-down'
   'ctrl-k': 'core:move-up'
