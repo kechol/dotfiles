@@ -89,7 +89,9 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift",
+                                            "right_shift"
                                         ]
                                     }
                                 },
@@ -108,7 +110,9 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift",
+                                            "right_shift"
                                         ]
                                     }
                                 },
@@ -127,7 +131,9 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift",
+                                            "right_shift"
                                         ]
                                     }
                                 },
@@ -146,7 +152,9 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift",
+                                            "right_shift"
                                         ]
                                     }
                                 },
