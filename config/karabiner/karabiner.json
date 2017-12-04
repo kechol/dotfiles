@@ -89,7 +89,8 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift"
                                         ]
                                     }
                                 },
@@ -108,7 +109,8 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift"
                                         ]
                                     }
                                 },
@@ -127,7 +129,8 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift"
                                         ]
                                     }
                                 },
@@ -146,7 +149,8 @@
                                             "control"
                                         ],
                                         "optional": [
-                                            "caps_lock"
+                                            "caps_lock",
+                                            "left_shift"
                                         ]
                                     }
                                 },
@@ -177,6 +181,9 @@
                                 "to": [
                                     {
                                         "key_code": "escape"
+                                    },
+                                    {
+                                        "key_code": "japanese_eisuu"
                                     }
                                 ],
                                 "type": "basic"
