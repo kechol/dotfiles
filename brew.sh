@@ -16,6 +16,7 @@ brew install autoconf
 brew install ansible
 brew install antigen
 brew install autojump
+brew install awscli
 brew install bison
 brew install bitbar
 brew install ccache
