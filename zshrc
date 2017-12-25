@@ -70,7 +70,6 @@ alias k='kill'
 alias k9='kill -9'
 alias l='ls -al'
 alias m='mv'
-alias n='ngrok'
 alias o='open'
 alias p='ps aux'
 alias rm='rmtrash'
@@ -103,6 +102,17 @@ alias r='bundle exec rails'
 alias rk='bundle exec rake'
 alias rp='bundle exec rspec'
 unalias rg # for ripgrep
+
+alias ee='direnv edit'
+alias er='direnv reload'
+alias ea='direnv allow'
+alias ed='direnv deny'
+
+alias ns='npm start'
+alias nt='npm test'
+alias nr='npm run'
+alias ni='npm install'
+alias ny='yarn'
 
 bindkey '^N' kill-line
 bindkey '^W' clear-screen
