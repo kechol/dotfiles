@@ -18,7 +18,6 @@ brew install antigen
 brew install autojump
 brew install awscli
 brew install bison
-brew install bitbar
 brew install ccache
 brew install clamav
 brew install cmake
@@ -97,8 +96,6 @@ brew cask install docker
 brew cask install dropbox
 brew cask install flux
 brew cask install google-chrome
-brew cask install google-japanese-ime
-brew cask install gyazo
 brew cask install iterm2
 brew cask install imageoptim
 brew cask install jasper
