@@ -288,7 +288,7 @@
                         "key_code": "f3"
                     },
                     "to": {
-                        "key_code": "mission_control"
+                        "consumer_key_code": "volume_decrement"
                     }
                 },
                 {
@@ -296,7 +296,7 @@
                         "key_code": "f4"
                     },
                     "to": {
-                        "key_code": "launchpad"
+                        "consumer_key_code": "volume_increment"
                     }
                 },
                 {
@@ -352,7 +352,7 @@
                         "key_code": "f11"
                     },
                     "to": {
-                        "consumer_key_code": "volume_decrement"
+                        "key_code": "launchpad"
                     }
                 },
                 {
@@ -360,7 +360,7 @@
                         "key_code": "f12"
                     },
                     "to": {
-                        "consumer_key_code": "volume_increment"
+                        "key_code": "mission_control"
                     }
                 }
             ],
