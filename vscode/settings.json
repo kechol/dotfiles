@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.renderIndentGuides": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "sync.gist": "e37c3c7f70fa193587c29fabb2866d42",
+    "sync.lastUpload": "2017-07-19T14:14:13.276Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules/**": true,
+        "**/vendor/bundle/**": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/vendor/bundle/**": true
+    },
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": 0,
+    "trailing-spaces.trimOnSave": true
+}
