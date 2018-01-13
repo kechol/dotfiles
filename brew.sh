@@ -87,7 +87,6 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 brew install brew-cask-completion
 
-brew cask install atom
 brew cask install android-studio
 brew cask install alfred
 brew cask install cyberduck
