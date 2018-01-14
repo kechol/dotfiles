@@ -15,6 +15,7 @@ brew install ack
 brew install autoconf
 brew install ansible
 brew install antigen
+brew install autossh
 brew install autojump
 brew install awscli
 brew install bison
