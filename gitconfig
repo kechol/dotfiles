@@ -36,6 +36,7 @@
     precomposeunicode = false
     excludesfile = ~/.gitignore
     compression = 9
+    commentchar = ^
 
 [color]
     ui = auto
