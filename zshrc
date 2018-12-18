@@ -65,11 +65,10 @@ alias cl='clear'
 alias e='echo'
 alias f='find'
 alias h='hg'
-alias k='kill'
-alias k9='kill -9'
 alias l='ls -al'
 alias m='mv'
 alias o='open'
+alias om='open-monorepo'
 alias p='ps aux'
 alias rm='rmtrash'
 alias s='ssh'
@@ -118,6 +117,15 @@ alias nr='npm run'
 alias ni='npm install'
 alias ny='yarn'
 
+alias k='kubectl'
+alias kg='kubectl get'
+alias kx='kubectl exec'
+alias kd='kubectl describe'
+alias kl='kubectl logs'
+alias kc='kubectx'
+alias kn='kubens'
+alias -g kP='$(kubectl get pods | fzf | awk "{print \$1}")'
+
 bindkey '^N' kill-line
 bindkey '^W' clear-screen
 bindkey '^N' forward-word
@@ -141,3 +149,7 @@ function git-clean-local-branch() {
 }
 
 if [ "$TMUX" = "" ]; then tmux; fi
+
+function open-monorepo() {
+  open "https://github.com/quipper/monorepo/pull/$1"
+}

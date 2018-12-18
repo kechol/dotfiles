@@ -1,3 +1,7 @@
+### Project
+bin/kubectl
+
+
 ### anyenv
 .php-version
 .ruby-version
