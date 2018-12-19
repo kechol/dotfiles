@@ -37,6 +37,7 @@
     excludesfile = ~/.gitignore
     compression = 9
     commentchar = ^
+    hooksPath = /dev/null
 
 [color]
     ui = auto
@@ -94,3 +95,8 @@
 
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
