@@ -31,3 +31,5 @@ config/direnv
 config/robomongo
 config/hub
 config/karabiner/assets
+config/gocode
+config/gcloud

@@ -141,3 +141,6 @@ function git-clean-local-branch() {
 }
 
 if [ "$TMUX" = "" ]; then tmux; fi
+
+if [ -f '/Users/kechol/.gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kechol/.gcloud/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/kechol/.gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kechol/.gcloud/google-cloud-sdk/completion.zsh.inc'; fi
