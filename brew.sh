@@ -16,11 +16,9 @@ brew install autoconf
 brew install ansible
 brew install antigen
 brew install autossh
-brew install autojump
 brew install awscli
 brew install bison
 brew install ccache
-brew install clamav
 brew install cmake
 brew install coreutils
 brew install ctags
@@ -55,12 +53,10 @@ brew install nkf
 brew install openssl
 brew install ossp-uuid
 brew install postgresql
-brew install phantomjs
 brew install pkgconfig
 brew install q
 brew install qt@5.5
 brew install readline
-brew install reattach-to-user-namespace
 brew install redis
 brew install ripgrep
 brew install rmtrash
@@ -84,31 +80,25 @@ brew link --force qt@5.5
 
 brew cleanup
 
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew install brew-cask-completion
+#brew tap caskroom/cask
+#brew tap caskroom/versions
+#brew install brew-cask-completion
 
-brew cask install android-studio
-brew cask install alfred
-brew cask install cyberduck
-brew cask install dash
-brew cask install docker
-brew cask install dropbox
-brew cask install flux
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install imageoptim
-brew cask install jasper
-brew cask install java
-brew cask install karabiner-elements
-brew cask install magican
-brew cask install ngrok
-brew cask install postman
-brew cask install postico
-brew cask install rescuetime
-brew cask install robomongo
-brew cask install sequel-pro
+#brew cask install alfred
+#brew cask install dash
+#brew cask install docker
+#brew cask install dropbox
+#brew cask install flux
+#brew cask install google-chrome
+#brew cask install iterm2
+#brew cask install imageoptim
+#brew cask install jasper
+#brew cask install java
+#brew cask install ngrok
+#brew cask install postico
+#brew cask install rescuetime
+#brew cask install sequel-pro
 
-brew cask cleanup
+#brew cask cleanup
 
 fi
