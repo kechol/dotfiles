@@ -68,7 +68,6 @@ alias h='hg'
 alias l='ls -al'
 alias m='mv'
 alias o='open'
-alias om='open-monorepo'
 alias p='ps aux'
 alias rm='rmtrash'
 alias s='ssh'
@@ -84,6 +83,7 @@ alias gca='git commit --amend --no-edit'
 alias gdc='git diff --cached'
 alias grs='git reset HEAD'
 alias grv='git checkout --'
+alias gpf='git push --force-with-lease'
 alias gsw='git update-index --skip-worktree'
 alias gtw='git update-index --no-skip-worktree'
 alias gclb='git-clean-local-branch'
@@ -146,10 +146,6 @@ function git-clean-local-branch() {
     target="$1"
   fi
   git branch --merged "$target" | grep -v "$target" | xargs git branch -d
-}
-
-function open-monorepo() {
-  open "https://github.com/quipper/monorepo/pull/$1"
 }
 
 if [ "$TMUX" = "" ]; then tmux; fi
