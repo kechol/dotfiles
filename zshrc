@@ -15,6 +15,7 @@ export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_ITERM2=true
+export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
 
 eval "$(anyenv init -)"
 eval "$(hub alias -s)"
@@ -126,11 +127,9 @@ alias kc='kubectx'
 alias kn='kubens'
 alias -g kP='$(kubectl get pods | fzf | awk "{print \$1}")'
 
-bindkey '^N' kill-line
-bindkey '^W' clear-screen
-bindkey '^N' forward-word
-bindkey '^P' backward-word
-bindkey '^U' backward-kill-word
+bindkey '^[^[OC' forward-word
+bindkey '^[^[OD' backward-word
+bindkey '^[^[3~' backward-kill-word
 
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
