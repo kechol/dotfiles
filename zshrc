@@ -15,6 +15,7 @@ export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_ITERM2=true
+export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
 
 eval "$(anyenv init -)"
 eval "$(hub alias -s)"
@@ -45,10 +46,7 @@ antigen bundle command-not-found
 antigen bundle common-aliases
 antigen bundle docker
 antigen bundle git
-antigen bundle heroku
-antigen bundle npm
 antigen bundle osx
-antigen bundle rails
 antigen bundle z
 antigen bundle mollifier/anyframe
 antigen bundle zsh-users/zsh-completions
@@ -68,7 +66,6 @@ alias h='hg'
 alias l='ls -al'
 alias m='mv'
 alias o='open'
-alias om='open-monorepo'
 alias p='ps aux'
 alias rm='rmtrash'
 alias s='ssh'
@@ -84,6 +81,7 @@ alias gca='git commit --amend --no-edit'
 alias gdc='git diff --cached'
 alias grs='git reset HEAD'
 alias grv='git checkout --'
+alias gpf='git push --force-with-lease'
 alias gsw='git update-index --skip-worktree'
 alias gtw='git update-index --no-skip-worktree'
 alias gclb='git-clean-local-branch'
@@ -104,7 +102,6 @@ alias bu='bundle update'
 alias r='bundle exec rails'
 alias rk='bundle exec rake'
 alias rp='bundle exec rspec'
-unalias rg # for ripgrep
 
 alias ee='direnv edit'
 alias er='direnv reload'
@@ -126,11 +123,9 @@ alias kc='kubectx'
 alias kn='kubens'
 alias -g kP='$(kubectl get pods | fzf | awk "{print \$1}")'
 
-bindkey '^N' kill-line
-bindkey '^W' clear-screen
-bindkey '^N' forward-word
-bindkey '^P' backward-word
-bindkey '^U' backward-kill-word
+bindkey '^[^[OC' forward-word
+bindkey '^[^[OD' backward-word
+bindkey '^[^[3~' backward-kill-word
 
 bindkey '^T' anyframe-widget-cdr
 bindkey '^R' anyframe-widget-put-history
@@ -147,12 +142,6 @@ function git-clean-local-branch() {
   fi
   git branch --merged "$target" | grep -v "$target" | xargs git branch -d
 }
-
-function open-monorepo() {
-  open "https://github.com/quipper/monorepo/pull/$1"
-}
-
-if [ "$TMUX" = "" ]; then tmux; fi
 
 if [ -f '/Users/kechol/.gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kechol/.gcloud/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/kechol/.gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kechol/.gcloud/google-cloud-sdk/completion.zsh.inc'; fi
