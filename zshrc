@@ -46,10 +46,7 @@ antigen bundle command-not-found
 antigen bundle common-aliases
 antigen bundle docker
 antigen bundle git
-antigen bundle heroku
-antigen bundle npm
 antigen bundle osx
-antigen bundle rails
 antigen bundle z
 antigen bundle mollifier/anyframe
 antigen bundle zsh-users/zsh-completions
@@ -105,7 +102,6 @@ alias bu='bundle update'
 alias r='bundle exec rails'
 alias rk='bundle exec rake'
 alias rp='bundle exec rspec'
-unalias rg # for ripgrep
 
 alias ee='direnv edit'
 alias er='direnv reload'
