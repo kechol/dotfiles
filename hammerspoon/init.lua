@@ -84,8 +84,8 @@ remapKey({'ctrl', 'shift'}, 'l', keyCode('right', {'shift'}))
 --remapKey({'ctrl', 'shift', 'cmd'}, 'k', keyCode('up', {'shift', 'cmd'}))
 --remapKey({'ctrl', 'shift', 'cmd'}, 'l', keyCode('right', {'shift', 'cmd'}))
 
-remapKey({'ctrl', 'alt'}, 'h', keyCode('left', {'alt'}))
-remapKey({'ctrl', 'alt'}, 'l', keyCode('right', {'alt'}))
+--remapKey({'ctrl', 'alt'}, 'h', keyCode('left', {'alt'}))
+--remapKey({'ctrl', 'alt'}, 'l', keyCode('right', {'alt'}))
 --remapKey({'ctrl', 'alt'}, 'j', keyCode('down', {'alt'}))
 --remapKey({'ctrl', 'alt'}, 'k', keyCode('up', {'alt'}))
 
