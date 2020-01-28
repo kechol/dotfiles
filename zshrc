@@ -17,7 +17,7 @@ export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_ITERM2=true
 export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
 
-eval "$(anyenv init -)"
+#eval "$(anyenv init -)"
 eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 
