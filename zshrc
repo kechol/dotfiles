@@ -2,7 +2,7 @@ source /usr/local/share/antigen/antigen.zsh
 
 export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
 export EDITOR=vim
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$HOME/.anyenv/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PAGER=less
 export LANG=
 export LC_COLLATE=en_US.UTF-8
@@ -17,7 +17,6 @@ export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_ITERM2=true
 export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
 
-#eval "$(anyenv init -)"
 eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 

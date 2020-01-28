@@ -1,9 +1,3 @@
-[submodule "fonts/RictyDiminished"]
-	path = fonts/RictyDiminished
-	url = git@github.com:edihbrandon/RictyDiminished.git
-[submodule "anyenv"]
-	path = anyenv
-	url = git@github.com:riywo/anyenv.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
