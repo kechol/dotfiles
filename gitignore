@@ -1,7 +1,3 @@
-### Project
-bin/kubectl
-
-
 ### anyenv
 .php-version
 .ruby-version
@@ -411,3 +407,11 @@ local.properties
 !.vscode/extensions.json
 
 
+### https://raw.github.com/github/gitignore/18aa6d83774d514da479d73a4beb864cd4220231/Scala.gitignore
+
+*.class
+*.log
+
+# Scalameta
+.metals
+.bloop
