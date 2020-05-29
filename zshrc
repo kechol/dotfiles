@@ -1,6 +1,7 @@
 source /usr/local/share/antigen/antigen.zsh
 
 export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
 export EDITOR=vim
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PAGER=less
