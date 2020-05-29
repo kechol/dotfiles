@@ -10,15 +10,6 @@ tmux/
 !tmux/plugins/tpm
 
 
-## atom
-atom/
-!atom/config.cson
-!atom/keymap.cson
-!atom/init.coffee
-!atom/snippets.cson
-!atom/styles.less
-
-
 ## vscode
 vscode/extensions
 
