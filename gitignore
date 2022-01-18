@@ -59,7 +59,6 @@ app/[Cc]onfig/database.php
 ### https://raw.github.com/github/gitignore/master/Dart.gitignore
 
 // Don’t commit the following files and directories created by pub and dart2js
-packages/
 *.js_
 *.js.deps
 *.js.map
@@ -143,7 +142,6 @@ develop-eggs/
 dist/
 eggs/
 lib64/
-parts/
 sdist/
 var/
 *.egg-info/
@@ -262,6 +260,12 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# Metals
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
 
 
 ### https://raw.github.com/github/gitignore/master/Yeoman.gitignore
@@ -415,3 +419,5 @@ local.properties
 # Scalameta
 .metals
 .bloop
+.ammonite/
+.metals.sbt
