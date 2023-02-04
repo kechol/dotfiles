@@ -44,6 +44,16 @@ map <Enter> o
 imap jj <ESC>
 imap kk <ESC>
 vnoremap <silent> <C-p> "0p<CR>
+nnoremap d "_d
+vnoremap d "_d
+nnoremap D "_D
+vnoremap D "_D
+nnoremap c "_c
+vnoremap c "_c
+nnoremap C "_C
+vnoremap C "_C
+vnoremap p "_dP
+xnoremap p pgvy
 
 "" Color scheme
 syntax on
