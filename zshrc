@@ -1,4 +1,4 @@
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
@@ -20,7 +20,6 @@ export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_ITERM2=true
 export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
 
-eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 
 umask 022
