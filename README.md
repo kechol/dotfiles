@@ -10,23 +10,12 @@ git clone https://github.com/kechol/dotfiles.git ~/.dotfiles
 git submodule update --init --recursive
 ```
 
-Install packages and apps
-
-```
-./brew.sh
-```
-
 Setup config files
 
 ```
 ./bootstrap.sh
 ```
 
-Override OSX defaults
-
-```
-./osx/defaults.sh
-```
 
 ## Requirements
 
