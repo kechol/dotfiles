@@ -7,6 +7,8 @@
 
 ### Direnv
 .envrc
+secrets.local.conf
+secrets.dev.conf
 
 
 ### Ctags
@@ -404,11 +406,7 @@ local.properties
 
 ### https://raw.github.com/github/gitignore/9139ad597b05354da689b19ce805c389252a6b8b/Global/VisualStudioCode.gitignore
 
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
 
 
 ### https://raw.github.com/github/gitignore/18aa6d83774d514da479d73a4beb864cd4220231/Scala.gitignore

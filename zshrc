@@ -2,8 +2,10 @@ source /usr/local/share/antigen/antigen.zsh
 
 export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+export CLOUDSDK_PYTHON=python3
+export GOPATH="$HOME/.go"
 export EDITOR=vim
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH"
 export PAGER=less
 export LANG=
 export LC_COLLATE=en_US.UTF-8
@@ -67,7 +69,8 @@ alias l='ls -al'
 alias m='mv'
 alias o='open'
 alias p='ps aux'
-alias rm='rmtrash'
+alias rm='trash -F'
+
 alias s='ssh'
 alias v='vim'
 alias vi='vim'
