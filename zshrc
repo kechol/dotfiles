@@ -68,7 +68,7 @@ alias l='ls -al'
 alias m='mv'
 alias o='open'
 alias p='ps aux'
-alias rm='trash -F'
+alias rm='trash'
 
 alias s='ssh'
 alias v='vim'

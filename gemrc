@@ -1,4 +1,0 @@
-gem: --no-ri --no-rdoc
-benchmark: false
-backtrace: true
-gemsrc_use_ghq: true
