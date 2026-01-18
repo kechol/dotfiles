@@ -1,0 +1,68 @@
+# ========================================
+# Git Config
+# ========================================
+
+[include]
+    path = ~/.config/git/config.d/core.conf
+    path = ~/.config/git/config.d/alias.conf
+    path = ~/.config/git/config.d/user.conf
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+
+[fetch]
+    prune = true
+    pruneTags = true
+
+[merge]
+    conflictstyle = zdiff3
+    log = true
+
+[rebase]
+    autostash = true
+    autosquash = true
+
+[diff]
+    algorithm = histogram
+    colorMoved = default
+    renames = copies
+
+[help]
+    autocorrect = 10
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = -version:refname
+
+[log]
+    date = iso
+
+[commit]
+    verbose = true
+
+[status]
+    submoduleSummary = true
+    showStash = true
+
+[transfer]
+    fsckobjects = true
+
+[maintenance]
+    auto = true
+
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+
