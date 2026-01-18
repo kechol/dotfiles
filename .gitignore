@@ -17,10 +17,8 @@ vscode/extensions
 ## config
 config/heroku
 config/configstore
-config/yarn
 config/direnv
-config/robomongo
-config/hub
 config/karabiner/assets
-config/gocode
 config/gcloud
+config/raycast
+config/op

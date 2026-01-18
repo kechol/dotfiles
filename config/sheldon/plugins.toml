@@ -1,0 +1,102 @@
+shell = 'zsh'
+
+# ========================================
+# zsh-defer
+# ========================================
+[plugins.zsh-defer]
+github = 'romkatv/zsh-defer'
+apply = ['source']
+
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
+# ========================================
+# pure theme
+# ========================================
+[plugins.pure]
+github = 'sindresorhus/pure'
+use = ['pure.zsh', 'async.zsh']
+apply = ['fpath']
+
+# ========================================
+# 補完
+# ========================================
+[plugins.compinit]
+inline = 'autoload -Uz compinit && zsh-defer compinit'
+
+[plugins.colors]
+inline = 'autoload -Uz colors && zsh-defer colors'
+
+[plugins.zsh-completions]
+github = 'zsh-users/zsh-completions'
+dir = 'src'
+apply = ['fpath']
+
+[plugins.zsh-autosuggestions]
+github = 'zsh-users/zsh-autosuggestions'
+apply = ['defer']
+
+[plugins.zsh-syntax-highlighting]
+github = 'zsh-users/zsh-syntax-highlighting'
+apply = ['defer']
+
+# ========================================
+# 外部プラグイン
+# ========================================
+[plugins.anyframe]
+github = 'mollifier/anyframe'
+apply = ['defer']
+
+# ========================================
+# Oh My Zsh
+# ========================================
+[plugins.omz-lib]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'lib'
+use = ['theme-and-appearance.zsh']
+
+[plugins.omz-git]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/git'
+apply = ['defer']
+
+[plugins.omz-gh]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/gh'
+apply = ['defer']
+
+[plugins.omz-gitignore]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/gitignore'
+apply = ['defer']
+
+[plugins.omz-direnv]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/direnv'
+apply = ['defer']
+
+[plugins.omz-docker]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/docker'
+apply = ['defer']
+
+[plugins.omz-docker-compose]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/docker-compose'
+apply = ['defer']
+
+# ========================================
+# ローカル設定（同期読み込み）
+# ========================================
+[plugins.local-sync]
+local = '~/.config/zsh/sync'
+use = ['*.zsh']
+apply = ['source']
+
+# ========================================
+# ローカル設定（遅延読み込み）
+# ========================================
+[plugins.local-defer]
+local = '~/.config/zsh/defer'
+use = ['*.zsh']
+apply = ['defer']
