@@ -4,6 +4,9 @@
 ### Claude
 **/.claude/settings.local.json
 
+### ssh
+ssh/config.d/*.conf
+
 
 ### https://raw.github.com/github/gitignore/master/Android.gitignore
 

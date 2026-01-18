@@ -33,5 +33,4 @@ Host 192.168.33.*
     IdentityFile ~/.vagrant.d/insecure_private_key
     User vagrant
 
-# Host example.com
-#     ProxyCommand ssh -W %h:%p proxy.example.com
+Include ~/.ssh/config.d/work.conf
