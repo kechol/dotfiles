@@ -70,11 +70,6 @@ github = 'ohmyzsh/ohmyzsh'
 dir = 'plugins/gitignore'
 apply = ['defer']
 
-[plugins.omz-direnv]
-github = 'ohmyzsh/ohmyzsh'
-dir = 'plugins/direnv'
-apply = ['defer']
-
 [plugins.omz-docker]
 github = 'ohmyzsh/ohmyzsh'
 dir = 'plugins/docker'

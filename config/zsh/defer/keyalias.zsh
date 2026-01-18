@@ -51,12 +51,6 @@ alias dcr='docker-compose run --rm'
 alias dcd='docker-compose down'
 alias dcl='docker-compose logs -f -t --tail=200'
 
-# Direnv
-alias ee='direnv edit'
-alias er='direnv reload'
-alias ea='direnv allow'
-alias ed='direnv deny'
-
 # Node / npm
 alias ns='npm start'
 alias nt='npm test'

@@ -1,0 +1,14 @@
+[tools]
+node = "24"
+python = "3.12"
+go = "latest"
+kubectl = "latest"
+terraform = "latest"
+gh = "latest"
+
+[env]
+EDITOR = "vim"
+
+[settings]
+experimental = true
+legacy_version_file = true

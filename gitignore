@@ -1,20 +1,5 @@
-### anyenv
-.php-version
-.ruby-version
-.python-version
-.node-version
-
-
-### Direnv
-.envrc
-secrets.local.conf
-secrets.dev.conf
-
-
-### Ctags
-tags
-.tags*
-
+### mise
+.mise.local.toml
 
 ### Claude
 **/.claude/settings.local.json

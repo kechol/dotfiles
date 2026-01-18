@@ -53,9 +53,3 @@ export LC_ALL=en_US.UTF-8
 # ツール設定
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
-
-# 言語/SDK
-export CLOUDSDK_PYTHON=python3
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
-export GOPATH="$HOME/.go"
-export PATH="$GOPATH/bin:$PATH"
