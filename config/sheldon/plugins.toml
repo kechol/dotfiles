@@ -41,13 +41,6 @@ github = 'zsh-users/zsh-syntax-highlighting'
 apply = ['defer']
 
 # ========================================
-# 外部プラグイン
-# ========================================
-[plugins.anyframe]
-github = 'mollifier/anyframe'
-apply = ['defer']
-
-# ========================================
 # Oh My Zsh
 # ========================================
 [plugins.omz-lib]

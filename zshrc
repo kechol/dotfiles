@@ -7,3 +7,6 @@ eval "$(mise hook-env)"
 # sheldon
 eval "$(sheldon source)"
 # see: ~/.config/zsh/{sync,defer}/*.zsh
+
+# fzf
+source <(fzf --zsh)
