@@ -4,6 +4,7 @@
 
 [include]
     path = ~/.config/git/config.d/core.conf
+    path = ~/.config/git/config.d/delta.conf
     path = ~/.config/git/config.d/alias.conf
     path = ~/.config/git/config.d/user.conf
 
@@ -59,6 +60,13 @@
 
 [maintenance]
     auto = true
+
+[delta]
+    features = mellow-barbet
+    navigate = true
+    dark = true
+    side-by-side = true
+    line-numbers = true
 
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
