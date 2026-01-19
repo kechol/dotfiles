@@ -43,7 +43,7 @@ let g:mapleader=","
 map <Enter> o
 imap jj <ESC>
 imap kk <ESC>
-vnoremap <silent> <C-p> "0p<CR>
+vnoremap p "_dP
 
 "" Color scheme
 syntax on
