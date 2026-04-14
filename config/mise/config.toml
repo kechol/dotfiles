@@ -1,6 +1,6 @@
 [tools]
 node = "24"
-python = "3.12"
+python = "3.13"
 go = "latest"
 kubectl = "latest"
 terraform = "latest"
