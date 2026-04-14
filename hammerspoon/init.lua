@@ -1,5 +1,7 @@
--- HANDLE SCROLLING
+-- Install CLI
+hs.ipc.cliInstall("/opt/homebrew/")
 
+-- HANDLE SCROLLING
 local deferred = false
 
 overrideRightMouseDown = hs.eventtap.new({ hs.eventtap.event.types.rightMouseDown }, function(e)
