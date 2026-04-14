@@ -11,14 +11,6 @@ apply = ['source']
 defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
 
 # ========================================
-# pure theme
-# ========================================
-[plugins.pure]
-github = 'sindresorhus/pure'
-use = ['pure.zsh', 'async.zsh']
-apply = ['fpath']
-
-# ========================================
 # 補完
 # ========================================
 [plugins.compinit]
@@ -43,11 +35,6 @@ apply = ['defer']
 # ========================================
 # Oh My Zsh
 # ========================================
-[plugins.omz-lib]
-github = 'ohmyzsh/ohmyzsh'
-dir = 'lib'
-use = ['theme-and-appearance.zsh']
-
 [plugins.omz-git]
 github = 'ohmyzsh/ohmyzsh'
 dir = 'plugins/git'

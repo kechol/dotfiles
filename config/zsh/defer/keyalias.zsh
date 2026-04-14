@@ -9,11 +9,14 @@ alias -g .....='../../../..'
 
 # 一般
 alias b='brew'
-alias c='code'
+alias c='claude'
+alias cc='claude -c'
+alias cr='claude -r'
 alias cl='clear'
 alias f='find'
 alias l='ls -al'
 alias m='mv'
+alias md='mo --foreground --watch "./**/*.md"'
 alias o='open'
 alias rm='trash'
 alias s='ssh'
@@ -29,6 +32,7 @@ alias gic='gh issue create'
 alias gs='git status -sb'
 alias gb='gh browse'
 alias gca='git commit --amend --no-edit'
+alias gcai='git-commit-ai'
 alias gdc='git diff --cached'
 alias grs='git reset HEAD'
 alias grv='git checkout --'
@@ -50,6 +54,9 @@ alias dcuf='docker-compose up --force-recreate'
 alias dcr='docker-compose run --rm'
 alias dcd='docker-compose down'
 alias dcl='docker-compose logs -f -t --tail=200'
+
+# Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222'
 
 # Node / npm
 alias ns='npm start'

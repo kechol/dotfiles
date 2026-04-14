@@ -12,6 +12,9 @@ function git-clean-local-branch() {
   git branch --merged "$target" | grep -v "$target" | xargs git branch -d
 }
 
+function git-commit-ai() {
+  git commit -m "$(git diff --cached | claude -p 'Generate a concise commit message. Output only the message.')"
+}
 
 # ========================================
 # 補完設定
@@ -23,16 +26,5 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Git補完の高速化
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 zstyle ':completion:*:*:git:*' user-commands ${${(M)${(k)commands}:#git-*}/git-/}
 
-
- # ========================================
- # Google Cloud SDK
- # ========================================
-if [ -f "$HOME/.gcloud/google-cloud-sdk/path.zsh.inc" ]; then
-  zsh-defer source "$HOME/.gcloud/google-cloud-sdk/path.zsh.inc"
-fi
-if [ -f "$HOME/.gcloud/google-cloud-sdk/completion.zsh.inc" ]; then
-  zsh-defer source "$HOME/.gcloud/google-cloud-sdk/completion.zsh.inc"
-fi

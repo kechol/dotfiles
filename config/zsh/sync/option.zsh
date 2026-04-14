@@ -36,7 +36,6 @@ add-zsh-hook chpwd chpwd_recent_dirs
 # ========================================
 
 export EDITOR=vim
-export PAGER=less
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadacec
 
@@ -53,3 +52,10 @@ export LC_ALL=en_US.UTF-8
 # ツール設定
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export WORDCHARS='*?_-[]~=&!#$%^(){}<>'
+
+# Gcloud
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export CLOUDSDK_PYTHON=python3
+
+# Python
+export UV_EXCLUDE_NEWER="7 days"
