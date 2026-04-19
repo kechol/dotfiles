@@ -4,7 +4,7 @@
 PWD=`pwd`
 PREFIX='.'
 DOTFILES=`ls`
-IGNOREFILES=( .. backup bootstrap.sh brew.sh README.md .git .gitignore .gitmodules osx ghosttyrc)
+IGNOREFILES=( .. backup bootstrap.sh brew.sh README.md .git .gitignore .gitmodules osx ghosttyrc claude)
 
 BACKUPTIME=`date +%s`
 BACKUPDIR="${PWD}/backup/${BACKUPTIME}"
