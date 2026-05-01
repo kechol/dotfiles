@@ -11,7 +11,7 @@ window-padding-x = 4
 window-padding-y = 4
 window-padding-balance = true
 
-font-family = Hackmen
+font-family = "HackGen35 Console NF"
 font-size = 13
 adjust-cell-height = 8%
 
