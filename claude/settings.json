@@ -12,7 +12,7 @@
     "CLAUDE_CODE_SUBAGENT_MODEL": "sonnet"
   },
   "permissions": {
-    "defaultMode": "acceptEdits",
+    "defaultMode": "auto",
     "disableBypassPermissionsMode": "disable"
   },
   "statusLine": {
@@ -20,6 +20,7 @@
     "command": "python3 ~/.claude/statusline.py"
   },
   "enabledPlugins": {
+    "telegram@claude-plugins-official": true,
     "chrome-devtools-mcp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
@@ -35,5 +36,7 @@
   },
   "language": "Japanese",
   "model": "opus[1m]",
-  "effortLevel": "xhigh"
+  "effortLevel": "xhigh",
+  "theme": "dark-daltonized",
+  "skipAutoPermissionPrompt": true
 }
