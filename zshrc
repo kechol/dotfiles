@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$HOME/.browser-use-env/bin:$HOME/.gcloud/google-cloud-sdk/bin:$HOME/.bun/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$HOME/.gcloud/google-cloud-sdk/bin:$HOME/.bun/bin:$HOME/.cargo/bin:$PATH"
 
 # mise
 eval "$(mise activate zsh)"
