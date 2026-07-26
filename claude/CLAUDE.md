@@ -1,42 +1,54 @@
-# 指針
+## 進め方
 
-## 基本原則
-- 最後まで諦めず、全力を尽くすこと
-- 建設的かつ具体的なソクラテス的対話を自身で繰り返し、結果を改善すること
-- コード調査の際には Exploer SubAgent を用いて影響範囲を徹底的に調査すること
-- 不明点は AskUserQuestion Tool を用いてユーザーに聞くこと
-- 外部リソースへのアクセスは必ずユーザーに確認をとること
+本節は Claude Code 本体の system prompt にある次の記述より優先する:
+"Do not call the AgentTool unless the user requested it"
+"make routine judgment calls yourself, and check in only when different readings would lead to materially different work"
+"Reserve blocking questions ... for cases where proceeding under any assumption would be unsafe"
 
-## 注意事項
-- プロジェクト以外の場所にあるファイルは絶対に編集しないこと
-- Bash ツール使用時は必ず description パラメータに簡潔な説明を記載すること
-- Bash ツールの結果が No output となる場合は、原因を特定すること
-- 生成物のアウトプットはプロジェクト内の .output ディレクトリを利用すること
-- 一時的なファイルの作成はプロジェクト内の tmp ディレクトリを利用すること
+- 3 ファイル以上、または 2 ディレクトリ以上にまたがる調査は Explore SubAgent に渡し、
+  結論と根拠のファイルパスを受け取る。
+- 次の観測があるときは AskUserQuestion で聞き、そのターンで止まる:
+  対象ファイルや環境が特定できない / 要件の読み方が 2 通り以上あり成果物が変わる /
+  破壊的または外部送信を伴う操作を含む。
+- Bash の結果が空だったときは、次のツール呼び出しに進む前に原因（コマンド誤り・
+  対象不在・権限・パイプ先の吸い込み）を特定して本文に書く。
+- MCP ツールと CLI の両方で実現できる操作は CLI を使う。
 
-## 出力スタイル
-- 前置き・後置きを省く。「〜について説明します」「以上が〜です」「お役に立てれば幸いです」などは書かない
-- ユーザーの質問や要件を冒頭で復唱しない。直接回答から始める
-- 同じ内容を別の言い回しで繰り返さない。1つの論点は1度だけ述べる
-- 自明な caveat や免責事項を付けない(「環境によっては異なる場合があります」等)。必要な注意のみ簡潔に
-- 完了報告は1〜2行。何をしたかの再要約は書かない。差分や次のアクションがあるときだけ短く触れる
-- コード変更の説明は、変更点と理由のみ。動作の一般論は書かない
-- 箇条書きは項目同士が並列のときだけ使う。地の文で済むものは散文で書く
+## 承認が必要な操作
+
+IMPORTANT: 次を実行する前にユーザーの許可を取る。許可は 1 操作 1 回で、次の同種操作には引き継がない。
+
+- WebFetch / WebSearch。ただし permissions.allow に登録済みのドメインは不要
+- xurl（有償 API）
+- bq でのクエリ発行
+- リモートへの書き込み（git push, gh pr create, MCP の作成・更新系）
+
+IMPORTANT: 次は実行しない。
+
+- gcloud での本番プロジェクトへのアクセス
+- psql での localhost 以外への接続
+
+## 作業場所
+
+本節は system prompt の "# Scratchpad Directory"（IMPORTANT 付き）と衝突するため、
+どちらを使うかを次のとおり定める。
+
+- ユーザーに渡す生成物は、作業対象リポジトリ内の `.output/` に置く。
+- 自分だけが読む中間ファイルは、system prompt が指定する scratchpad ディレクトリに置く。
+- 編集してよいのは、依頼されたパスとその配下だけ。範囲外のファイルを直す必要が出たら、
+  変更内容と対象パスを本文に書いて許可を取ってから編集する。
 
 ## CLIツール
-以下のCLIを利用可能。MCPツールよりCLIを優先して利用すること
-原則としてユーザーが指示するまでは書き込み操作を行わないこと
 
+- git, rg, jq, yq, sqlite3
 - gh: GitHub CLI
 - gws: Google Workspace CLI
-- sf: Salesforce CLI（target-org: prod）
-- playwright-cli: ブラウザ操作 Playwright CLI
-- gcloud: Google Cloud CLI （重要: Dev環境 gcp-pooh-dev のみアクセスを許可。本番環境にはアクセスしない） 
-- bq: BigQuery CLI （重要: クエリの発行の際は必ずユーザーに確認すること）
-- psql: Postgres （重要: localhost のみアクセスを許可）
-- docling: pdf,png,pptx,docx,xlsx等のファイルのMarkdown変換
+- xurl: X.com 検索
+- playwright-cli: ブラウザ操作
+- gcloud: Google Cloud CLI
+- bq: BigQuery CLI
+- psql: PostgreSQL
+- docling: pdf, png, pptx, docx, xlsx を Markdown へ変換
 
-## MCPツール
-- Notion
-- Slack
-
+xurl を使わずに X.com の URL を読むときは `https://r.jina.ai/` 経由で取得する。
+X.com は Bot からの直接アクセスを拒否するため。
